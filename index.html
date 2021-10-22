@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 13</title>
+</head>
+<style>
+    /* Chrome, Safari, Edge, Opera */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    /* Firefox */
+    input[type=number] {
+        -moz-appearance: textfield;
+    }
+</style>
+<input type="number" id="Number1" placeholder="Enter First Number">
+<br>
+<input type="number" id="Number2" placeholder="Enter Second Number">
+<br>
+<input type="number" id="Number3" placeholder="Enter Third Number">
+<br>
+<br>
+<button onclick="myfunction()">Check!</button>
+
+<body style="text-align: center;">
+    <script>function myfunction() {
+        let large = 0;
+            a = document.getElementById("Number1").value
+            b = document.getElementById("Number2").value
+            c = document.getElementById("Number3").value
+            if (a > b) {
+                large = a;
+            }
+            else {
+                large = b;
+            }
+            if (c > large) {
+                large = c;
+            }
+            document.getElementById("A").innerHTML = `largest numbers is ${large}`
+        }
+
+    </script>
+</body>
+<p id="A"></p>
+
+</html>
